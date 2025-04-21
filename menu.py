@@ -70,7 +70,9 @@ while OPCAO != 3 and moradores < 300:
         print("A media parcial das idades é:",mediaidade)
         print("A primeira pessoa intrevistada foi:", primeirapessoa)
         print("A ultima pessoa intrevistada foi:", ultimapessoa)
-        print("A media de peso é:", mediapeso)
+        print("A media de peso é:", mediapeso) 
+    else:
+        print("opção invalida, tente novamente!")   
         
 
 
