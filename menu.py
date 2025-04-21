@@ -21,8 +21,7 @@ while OPCAO != 3 and moradores < 300:
         nome = input("Digite seu nome:")
         if moradores == 0:
             primeirapessoa = nome
-        if moradores == 299:
-            ultimapessoa = nome
+        ultimapessoa = nome
         idade = int(input("digite a idade:"))
         if moradores == 0:
             maisvelha = idade
@@ -38,7 +37,7 @@ while OPCAO != 3 and moradores < 300:
         elif peso < maismagra:
             maismagra = peso
             nomemagra = nome
-        transporte = input("Digite o transporte mais utilizado").upper()
+        transporte = input("Digite o transporte mais utilizado:").upper()
         if transporte == "CARRO":
             carro += 1
         elif transporte == "BICICLETA":
@@ -46,7 +45,7 @@ while OPCAO != 3 and moradores < 300:
         else:
             print("Opcao invalida!")
         moradores += 1
-    if OPCAO == 2:
+    elif OPCAO == 2:
         print("1 - media parcial das idades.")
         print("2 - nome da pessoa mais magra.")
         print("3 - nome da pessoa mais velha.")
@@ -64,7 +63,7 @@ while OPCAO != 3 and moradores < 300:
             porcentagemcarro = carro / moradores * 100
             print("A porcentagem de pessoas que usam bicicleta é:", porcentagembike)
             print("A porcentagem de pessoas que usam carro é:", porcentagemcarro)
-    if OPCAO == 3:
+    elif OPCAO == 3:
         mediaidade = somaidade / moradores
         mediapeso = somapeso / moradores
         print("A media parcial das idades é:",mediaidade)
@@ -72,7 +71,9 @@ while OPCAO != 3 and moradores < 300:
         print("A ultima pessoa intrevistada foi:", ultimapessoa)
         print("A media de peso é:", mediapeso) 
     else:
-        print("opção invalida, tente novamente!")   
+        print("opção invalida, tente novamente!")
+
+             
         
 
 
